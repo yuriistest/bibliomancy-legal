@@ -21,7 +21,7 @@
 <body>
 
 <h1>Privacy Policy for Bibliomancy</h1>
-<p>Effective Date: August 12, 2026</p>
+<p>Effective Date: August 18, 2026</p>
 
 <p>At Bibliomancy, we respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how our mobile application operates, how data is handled, and your privacy rights.</p>
 
@@ -37,22 +37,21 @@
 <h2>2. LOCAL DATA STORAGE ON YOUR DEVICE</h2>
 <p>All user interaction history and temporary cache data are processed strictly locally on your device using standard Android storage mechanisms:</p>
 <ul>
-  <li>In-Memory Passage Queue: Randomly fetched book passages are temporarily held in an in-memory queue to ensure fast delivery and offline responsiveness.</li>
+  <li>In-Memory Quote Queue: Randomly fetched quotes and literary passages are temporarily held in an in-memory queue to ensure fast delivery and offline responsiveness.</li>
   <li>Interaction & Text Selection: All text interactions (such as native text selection for copying, sharing, or searching) are handled directly by your device's operating system context menu. No record of selected text is transmitted to external servers.</li>
-  <li>Device Motion Processing: Shake gesture triggers rely on your device's physical accelerometer sensor to request new passages. Motion data is processed locally in real time and is never recorded or stored.</li>
+  <li>Device Motion Processing: Shake gesture triggers rely on your device's physical accelerometer sensor to request new quotes. Motion data is processed locally in real time and is never recorded or stored.</li>
 </ul>
 
 <h2>3. THIRD-PARTY SERVICES & NETWORK REQUESTS</h2>
-<p>To retrieve literary passages and book metadata, Bibliomancy connects to external APIs and leverages on-device system libraries:</p>
+<p>To retrieve literary quotes, author information, and metadata, Bibliomancy connects to external open APIs and system libraries:</p>
 <ul>
-  <li>Google Books API: The app fetches publicly available book snippets and bibliographic metadata directly from Google Books API endpoints under applicable terms.</li>
-  <li>Network Requests: When fetching content, standard technical metadata (such as your device's IP address and technical HTTP user-agent header required by web standards) may be processed by Google servers in accordance with the Google Privacy Policy (<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>).</li>
-  <li>On-Device ML Kit Language Identification: Bibliomancy utilizes Google ML Kit for Language Identification to filter passages based on your device's language settings. This language detection processing runs 100% locally on your device and does not send quote text or personal data to cloud servers.</li>
+  <li>Wikiquote API: The app fetches publicly available quotes and metadata directly from the Wikimedia / Wikiquote MediaWiki API endpoints across various supported language editions under applicable open content licenses.</li>
+  <li>Network Requests: When fetching content, standard technical metadata (such as your device's IP address and technical HTTP user-agent header required by web standards) may be processed by Wikimedia Foundation servers in accordance with the Wikimedia Privacy Policy (<a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">https://foundation.wikimedia.org/wiki/Policy:Privacy_policy</a>).</li>
 </ul>
 
 <h2>4. PERMISSIONS & CONTENT SAFETY</h2>
 <ul>
-  <li>Internet Access (<code>android.permission.INTERNET</code>): Required solely to retrieve random literary passages and metadata from the Google Books API.</li>
+  <li>Internet Access (<code>android.permission.INTERNET</code>): Required solely to retrieve random literary quotes and metadata from Wikiquote API endpoints.</li>
   <li>Hardware Sensors: Access to accelerometer sensors for shake gestures uses standard Android sensor APIs that do not require runtime permissions or access private user data.</li>
   <li>Zero Runtime Permissions: The application does not request or require runtime permissions (such as location, storage, clipboard, or contact access).</li>
 </ul>
